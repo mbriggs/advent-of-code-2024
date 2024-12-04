@@ -8,7 +8,7 @@ def check_levels(levels)
 
   safe = true
 
-  levels.each_cons(2) do |a,b|
+  levels.each_cons(2) do |a, b|
     amount_correct = (a - b).abs.between?(1, 3)
 
     levels_inc = a < b
