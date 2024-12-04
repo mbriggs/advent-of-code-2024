@@ -1,0 +1,19 @@
+inherit_from: "https://raw.githubusercontent.com/mbriggs/configs/main/dotfiles/rubocop.yml"
+require:
+  - rubocop-performance
+  - rubocop-minitest
+
+Lint/NestedMethodDefinition:
+  AllowedMethods: [ 'extending' ]
+
+Lint/Void:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/FormatString:
+  EnforcedStyle: sprintf
+
+Style/NumericLiterals:
+  Enabled: false
