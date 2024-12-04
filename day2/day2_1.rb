@@ -15,7 +15,7 @@ File.foreach("day2_data.txt") do |line|
 
   report_inc = levels[0] < levels[1]
 
-  levels.each_cons(2) do |a,b|
+  levels.each_cons(2) do |a, b|
     amount_correct = (a - b).abs.between?(1, 3)
 
     levels_inc = a < b
@@ -33,4 +33,3 @@ File.foreach("day2_data.txt") do |line|
 end
 
 puts "safe reports: #{safe_reports.length}"
-

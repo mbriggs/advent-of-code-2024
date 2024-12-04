@@ -15,4 +15,3 @@ total = list1.reduce(0) do |sum, id|
 end
 
 puts "similarity: #{total}"
-
